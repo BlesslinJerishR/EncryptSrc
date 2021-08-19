@@ -48,14 +48,15 @@ _|_|_|_|  _|    _|    _|_|_|  _|          _|_|_|  _|_|_|        _|_|  _|_|_|    
                                           _|_|    _|
 
                                         [ EncryptSrc : V 1.0 ]
-                                     [Developer : Mastermindx33 ]
-    """)
+                                     [ Developer : Mastermindx33 ]
+""")
 
 
 
 banner()
 
+# Bugs++
 import os
 from subprocess import Popen
-encryptor = Popen("FolderLock.bat", cwd=os.getcwd())
-stdout, stderr = encryptor.communicate()
+p = Popen("FolderLock.bat", cwd=r"c:\Documents\Coding\Github\EncryptSrc")
+stdout, stderr = p.communicate()
